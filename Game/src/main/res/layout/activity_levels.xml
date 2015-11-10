@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:screenOrientation= "portrait"
+    tools:context="com.natalia.pda_p.game.Levels">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Your Name"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/man"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/level"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/beginner"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Easiest level. Select one of two possible variant."
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/intermediate"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Average level. Select one of four possible variant."
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Average level. Select one of three possible variant."
+        android:id="@+id/textView4"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/imageView5"
+        android:src="@drawable/advanced"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="Beginner" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose"
+        android:id="@+id/button2"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:onClick="Intermediate"
+        android:clickable="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose"
+        android:id="@+id/button3"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:onClick="Advanced"
+        android:clickable="true" />
+
+</RelativeLayout>

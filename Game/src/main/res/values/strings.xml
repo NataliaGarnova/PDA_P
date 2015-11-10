@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Guess the meaning</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_who">Who</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_what">What</string>
+    <string name="title_activity_language">Language</string>
+    <string name="title_activity_your_game">YourGame</string>
+    <string name="title_activity_dowload">Dowload</string>
+    <string name="title_activity_levels">Levels</string>
+    <string name="title_activity_lesson">Lesson</string>
+    <string name="title_activity_exam">Exam</string>
+
+</resources>
